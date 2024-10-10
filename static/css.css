@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: 2000px;
+    /* ทำให้หน้ามีความยาวมากพอให้เลื่อน */
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.message-box {
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.hidden-message {
+    opacity: 0;
+    /* ซ่อนข้อความเริ่มต้น */
+    transform: translateY(50px);
+    /* ซ่อนข้อความโดยการเลื่อนขึ้น */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* ทำให้ข้อความค่อย ๆ ปรากฏ */
+}
+
+/* เมื่อข้อความได้ถูกแสดง */
+.message-box.visible .hidden-message {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.message-box.visible .hidden-message {
+    opacity: 1;
+    transform: translateY(0);
+    font-size: 36px;
+    /* ขนาดฟอนต์เมื่อข้อความปรากฏ */
+}
+
+p {
+    font-size: 36px;
+}
+
+.show-content {
+    opacity: 1;
+}
+
+.letter {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* ปุ่มเล่นเพลง */
+.play-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff00bf;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* กำหนดการเปลี่ยนแปลง opacity */
+}
+
+.message-box {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* กำหนดการเปลี่ยนแปลง opacity */
+}
+
+.show-content {
+    opacity: 1;
+}

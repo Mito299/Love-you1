@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css.css">
+    <title>ถึงคนพิเศษ</title>
+</head>
+
+<body>
+    <!-- ปุ่มให้ผู้ใช้กดเพื่อเล่นเพลง -->
+    <button class="play-btn" onclick="playMusic()">กดเปิด</button>
+
+    <!-- เพิ่มแท็ก <audio> เพื่อให้เพลงเล่นเมื่อกดปุ่ม -->
+    <audio id="background-music">
+        <!-- เส้นทางไปยังไฟล์เพลง -->
+        <source src="./static/1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- ข้อความในเว็บ -->
+    <div class="content">
+        <p>นี่คือจดหมายรักจากคนที่แอบชอบคุณอยู่</p>
+        <p>เราแอบชอบคุณมานานมากแล้วตั้งแต่ที่เราเห็นคุณ</p>
+        <p>เวลาเราเห็นคุณหัวใจเราแทบจะเต้นไม่หยุดไม่เป็นจังวะทำตัวไม่ถูก</p>
+        <p>คุณดูน่ารักมากๆไม่ใช่น่ารักแค่อย่างเดียวคุณทั้งเก่งอ่อนโยน</p>
+        <p>นั่นแหละที่ทำให้ผมตกหลุมรักคุณ</p>
+    </div>
+
+    <div class="message-box">
+        <p class="hidden-message">ทุกครั้งที่มองตาเธอ ฉันรู้สึกเหมือนเป็นคนที่โชคดีที่สุดในโลก</p>
+    </div>
+
+    <div class="message-box">
+        <p class="hidden-message">บางครั้งฉันคิดว่า ถ้าเธอรู้ว่าฉันรู้สึกยังไงกับเธอ มันอาจทำให้ทุกอย่างเปลี่ยนไป...
+            แต่แค่ได้เห็นเธอมีความสุข
+            ฉันก็พอใจแล้ว </p>
+    </div>
+
+    <div class="content">
+        <p>บางครั้งฉันก็อยากบอกเธอว่าฉันแอบชอบเธอ แต่กลัวว่ามันจะทำให้เราห่างกันมากขึ้น
+            เลยปล่อยให้ทุกอย่างเป็นเหมือนเดิม</p>
+    </div>
+
+
+    <script src="./static/js.js"></script>
+</body>
+
+</html>
